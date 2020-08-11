@@ -1,24 +1,8 @@
-from __future__ import annotations
-
 import random
 import time
 from typing import List
 
-
-class Observer:
-    def handle_event(self, lottery_number: int):
-        pass
-
-
-class Observed:
-    def add_observer(self, player: Player):
-        pass
-
-    def remove_observer(self, player: Player):
-        pass
-
-    def notify_observers(self, lottery_number: int):
-        pass
+from abstract import Observer, Observed
 
 
 class Player(Observer):
